@@ -9,7 +9,7 @@ fun main() {
     println("Input Knight's health, power, mana (0-1000)")
     val k = Knight(input.nextInt(), input.nextInt(), input.nextInt())
 
-//    println("Input count of battles")
+    println("Input count of battles")
     val n = input.nextInt()
     val random = Random(1337)
     for (i in 0 until n) {
@@ -25,12 +25,10 @@ fun main() {
                 when(r2) {
                     1 -> {
                         val p2 = ClassInGame.Robot
-//                        println("$p1 attack $p2")
                         w.attack(r, p2)
                     }
                     2 -> {
                         val p2 = ClassInGame.Knight
-//                        println("$p1 attack $p2")
                         w.attack(k, p2)
                     }
                 }
@@ -40,12 +38,10 @@ fun main() {
                 when(r2) {
                     0 -> {
                         val p2 = ClassInGame.Wizard
-//                        println("$p1 attack $p2")
                         r.attack(w, p2)
                     }
                     2 -> {
                         val p2 = ClassInGame.Knight
-//                        println("$p1 attack $p2")
                         r.attack(k, p2)
                     }
                 }
@@ -55,12 +51,10 @@ fun main() {
                 when(r2) {
                     0 -> {
                         val p2 = ClassInGame.Wizard
-//                        println("$p1 attack $p2")
                         k.attack(w, p2)
                     }
                     1 -> {
                         val p2 = ClassInGame.Robot
-//                        println("$p1 attack $p2")
                         k.attack(r, p2)
                     }
                 }
@@ -83,8 +77,4 @@ fun main() {
     println("Wizard count of attacks ${Wizard.countAttacks}")
     println("Robot count of attacks ${Robot.countAttacks}")
     println("Knight count of attacks ${Knight.countAttacks}")
-}
-
-fun Hi() {
-
 }
