@@ -84,3 +84,7 @@ fun main() {
     println("Robot count of attacks ${Robot.countAttacks}")
     println("Knight count of attacks ${Knight.countAttacks}")
 }
+
+fun Hi() {
+
+}
