@@ -9,7 +9,7 @@ fun main() {
     println("Input Knight's health, power, mana (0-1000)")
     val k = Knight(input.nextInt(), input.nextInt(), input.nextInt())
 
-    println("Input count of battles")
+//    println("Input count of battles")
     val n = input.nextInt()
     val random = Random(1337)
     for (i in 0 until n) {
