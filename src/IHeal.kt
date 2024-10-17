@@ -1,0 +1,3 @@
+interface IHeal {
+    fun heal()
+}
